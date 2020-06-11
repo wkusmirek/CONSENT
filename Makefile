@@ -1,6 +1,6 @@
 CC = g++ -std=c++11
-CFLAGS  = -Wall -O3 -std=c++11
-LDFLAGS = -lpthread
+CFLAGS  = -Wall -O3 -std=c++11 -IBMEAN/abPOA/include
+LDFLAGS = -lpthread -LBMEAN/abPOA/lib/ -labpoa -lz
 
 all: CONSENT-correction CONSENT-polishing explode merge
 
